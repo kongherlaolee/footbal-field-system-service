@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@500&display=swap');
+
+* {
+  font-family: 'Noto Sans Lao', sans-serif;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+.login-customer-card {
+  width: 40vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  box-shadow: 64px 64px 64px rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  opacity: 0.8
+}
+
+.onepay_image {
+  height: 350px;
+  width: 350px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif; */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* sidebar sytle */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 16vw;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.sidebar-item {
+  display: block;
+}
+
+.sidebar-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 16px 24px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar-item a:hover {
+  background-color: #f5f5f5;
+}
+
+.sidebar-item a.active {
+  color: rgb(3, 119, 34);
+}
+
+.sidebar-item a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.sidebar-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.vertical-line {
+  border-left: 1px solid black;
+  height: 2px;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.layout {
+  display: flex;
+}
+
+.main {
+  padding: 10px;
+  width: 84vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.layout {
+  display: flex;
+}
+
+/* Login style */
+.background-image {
+  background-image: url('assets/images/football-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+
+.logo-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.login-card {
+  width: 40vw;
+  height: 50vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  box-shadow: 64px 64px 64px rgba(0, 0, 0, 0.2);
+  border: none;
+  align-self: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  opacity: 0.8
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.stadiumA-B {
+  width: 695px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.stadiumA-B:hover {
+  transform: scale(1.05);
+}
+
+.img-stadium {
+    height: 22.5vw;
+    /* height: 350px; */
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.img-stadium:hover {
+  transform: scale(1.10);
+}
+
+.img-detail-stadium:hover {
+  transform: scale(1.05);
+}
+
+.img-detail-stadium {
+  margin-bottom: 10px;
+  /* width: 670px; */
+  width: 44vw;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.img-payment-bcelone {
+  width: 250px;
+  height: 447px;
+  border-radius: 5px;
+}
+
+.title-welcome b {
+  font-size: 5rem;
+}
+
+.image-logo {
+  width: 150px;
+}
+
+.form-check {
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 500px) {
+  .title-welcome {
+    font-size: 1.5rem;
+  }
+
+  /* .location-controll{
+    height: 10px;
+  } */
+  .img-stadium {
+    /* width: 300px; */
+    /* height: 210px; */
+    height: 10vh;
+  }
+
+  .img-detail-stadium {
+    width: 310px;
+    /* height: 200px; */
+  }
+
+  .media-text {
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+
+  .marginLeft-check {
+    margin-left: 20px;
+  }
+
+  .onepay_image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .stadiumA-B {
+    width: 355px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .stadiumA-B:hover {
+    transform: scale(1.08);
+  }
+
+}
+
+.container-home {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 120px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sale-container {
+  display: flex;
+  width: 85vw;
+}
+
+.sale-product-container {
+  width: 55.25vw;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(221, 218, 218);
+  overflow: scroll;
+  overflow-x: hidden
+}
+
+.sale-product-card {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.cart-container {
+  width: 29.75vw;
+  height: 80vh;
+  background-color: #fff;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden
+}
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.sub-nav {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-nav li {
+  padding-left: 50px;
+}
+
+
+.nav-item.subnav:hover .sub-nav {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.location-controll {
+  /* height: 590px;
+  width: 695px; */
+  width: 45vw;
+  height: 81.6vh;
+  border-radius: 5px;
+}
+
+
+.logout-item {
+  display: block;
+}
+
+.logout-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 16px 24px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logout-item a:hover {
+  background-color: #E0E0E0;
+}
+
+.footer-fontend {
+  width: 100%;
+  background-color: green;
+  padding: 20px;
+  margin-bottom: 50px;
+  height: 150px;
+}
+
+.social-media-icon {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.10);
+}
+
+.footer-icon-text {
+  display: flex;
+  justify-content: space-between;
+}
